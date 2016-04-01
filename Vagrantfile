@@ -47,6 +47,9 @@ Vagrant.configure(2) do |config|
     sudo ./install
     rm -rf hub-linux-amd64-2.2.3*
 
+    # Redis
+    sudo apt-get install redis-server --yes
+
     # Vagrant Permissions
     sudo chown -R vagrant /usr/local/rvm
 
